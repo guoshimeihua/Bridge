@@ -14,6 +14,11 @@
 		3258CB5E1B95D91800511FCC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3258CB5D1B95D91800511FCC /* Images.xcassets */; };
 		3258CB611B95D91800511FCC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3258CB5F1B95D91800511FCC /* LaunchScreen.xib */; };
 		3258CB6D1B95D91800511FCC /* BridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3258CB6C1B95D91800511FCC /* BridgeTests.m */; };
+		3258CB791B95D96000511FCC /* AbstractRemoteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3258CB781B95D96000511FCC /* AbstractRemoteControl.m */; };
+		3258CB7C1B95D97D00511FCC /* ConcreteRemoteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3258CB7B1B95D97D00511FCC /* ConcreteRemoteControl.m */; };
+		3258CB831B95DAB400511FCC /* AbstractTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 3258CB821B95DAB400511FCC /* AbstractTV.m */; };
+		3258CB891B95DB0700511FCC /* TVA.m in Sources */ = {isa = PBXBuildFile; fileRef = 3258CB881B95DB0700511FCC /* TVA.m */; };
+		3258CB8C1B95DB1400511FCC /* TVB.m in Sources */ = {isa = PBXBuildFile; fileRef = 3258CB8B1B95DB1400511FCC /* TVB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,17 @@
 		3258CB661B95D91800511FCC /* BridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3258CB6B1B95D91800511FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3258CB6C1B95D91800511FCC /* BridgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeTests.m; sourceTree = "<group>"; };
+		3258CB771B95D96000511FCC /* AbstractRemoteControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractRemoteControl.h; sourceTree = "<group>"; };
+		3258CB781B95D96000511FCC /* AbstractRemoteControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractRemoteControl.m; sourceTree = "<group>"; };
+		3258CB7A1B95D97D00511FCC /* ConcreteRemoteControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteRemoteControl.h; sourceTree = "<group>"; };
+		3258CB7B1B95D97D00511FCC /* ConcreteRemoteControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteRemoteControl.m; sourceTree = "<group>"; };
+		3258CB7D1B95D9AB00511FCC /* TVProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVProtocol.h; sourceTree = "<group>"; };
+		3258CB811B95DAB400511FCC /* AbstractTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTV.h; sourceTree = "<group>"; };
+		3258CB821B95DAB400511FCC /* AbstractTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractTV.m; sourceTree = "<group>"; };
+		3258CB871B95DB0700511FCC /* TVA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVA.h; sourceTree = "<group>"; };
+		3258CB881B95DB0700511FCC /* TVA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVA.m; sourceTree = "<group>"; };
+		3258CB8A1B95DB1400511FCC /* TVB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVB.h; sourceTree = "<group>"; };
+		3258CB8B1B95DB1400511FCC /* TVB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 		3258CB4F1B95D91800511FCC /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
+				3258CB761B95D92300511FCC /* BridgePattern */,
 				3258CB541B95D91800511FCC /* AppDelegate.h */,
 				3258CB551B95D91800511FCC /* AppDelegate.m */,
 				3258CB571B95D91800511FCC /* ViewController.h */,
@@ -117,6 +134,24 @@
 				3258CB6B1B95D91800511FCC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3258CB761B95D92300511FCC /* BridgePattern */ = {
+			isa = PBXGroup;
+			children = (
+				3258CB771B95D96000511FCC /* AbstractRemoteControl.h */,
+				3258CB781B95D96000511FCC /* AbstractRemoteControl.m */,
+				3258CB7A1B95D97D00511FCC /* ConcreteRemoteControl.h */,
+				3258CB7B1B95D97D00511FCC /* ConcreteRemoteControl.m */,
+				3258CB7D1B95D9AB00511FCC /* TVProtocol.h */,
+				3258CB811B95DAB400511FCC /* AbstractTV.h */,
+				3258CB821B95DAB400511FCC /* AbstractTV.m */,
+				3258CB871B95DB0700511FCC /* TVA.h */,
+				3258CB881B95DB0700511FCC /* TVA.m */,
+				3258CB8A1B95DB1400511FCC /* TVB.h */,
+				3258CB8B1B95DB1400511FCC /* TVB.m */,
+			);
+			name = BridgePattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +256,12 @@
 			files = (
 				3258CB591B95D91800511FCC /* ViewController.m in Sources */,
 				3258CB561B95D91800511FCC /* AppDelegate.m in Sources */,
+				3258CB7C1B95D97D00511FCC /* ConcreteRemoteControl.m in Sources */,
 				3258CB531B95D91800511FCC /* main.m in Sources */,
+				3258CB8C1B95DB1400511FCC /* TVB.m in Sources */,
+				3258CB791B95D96000511FCC /* AbstractRemoteControl.m in Sources */,
+				3258CB891B95DB0700511FCC /* TVA.m in Sources */,
+				3258CB831B95DAB400511FCC /* AbstractTV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
